@@ -20,12 +20,21 @@ class App extends Component {
     })
   }
 
+  deleteUser = (id) => {
+    let users = this.state.users.filter(user => {
+      return user.id !== id
+    })
+    this.setState({
+      users: users
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Starter</h1>
         <p>Welcome</p>
-        <Users users={ this.state.users } />
+        <Users deleteUser={ this.deleteUser } users={ this.state.users } />
         <AddUser addUser={this.addUser}/>
       </div>
     );
