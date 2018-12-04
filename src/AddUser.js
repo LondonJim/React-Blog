@@ -15,7 +15,7 @@ class AddUser extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    console.log(this.state)
+    this.props.addUser(this.state)
   }
 
   render(){
