@@ -23,9 +23,9 @@ class AddUser extends Component {
       <div>
         <form onSubmit={ this.handleSubmit }>
           <label htmlFor="name">Name:</label>
-          <input type="text" id="name" onChange={ this.handleChange }/>
+          <input type="text" id="name" name="name" onChange={ this.handleChange }/>
           <label htmlFor="age">Age:</label>
-          <input type="text" id="age" onChange={ this.handleChange }/>
+          <input type="text" id="age" name="age" onChange={ this.handleChange }/>
           <label htmlFor="interests">Interests:</label>
           <input type="text" id="interests" onChange={ this.handleChange }/>
           <button>Submit</button>
