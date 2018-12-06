@@ -1,6 +1,9 @@
 # Learning more React and testing with Jest!
 
-Currently in process of creating React blog site but playing around with and experimenting with Jest/Emzyme as I go. 
+Currently in process of creating React blog site but playing around with and experimenting with Jest/Emzyme as I go.
+
+## Instructions
+Add todos in the 'Add new todo' text area, to remove a todo click on it.
 
 ## Available Scripts
 
