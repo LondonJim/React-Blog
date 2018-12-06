@@ -17,7 +17,11 @@ it('renders welcome message', () => {
 });
 
 describe('deleteTodo', () => {
-  const wrapper = shallow(<App />).instance()
-  wrapper.deleteTodo(1)
-  expect(wrapper.state.todos).toEqual([{id: 2, content: 'pick up package'}])
+
+  it('removes todo from state todo list', () => {
+    const wrapper = shallow(<App />).instance()
+    wrapper.deleteTodo(1)
+    expect(wrapper.state.todos).toEqual([{id: 2, content: 'pick up package'}])
+  })
+
 })
