@@ -22,9 +22,9 @@ class AddTodo extends Component {
   render(){
     return(
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form id="submit-form" onSubmit={this.handleSubmit}>
           <label>Add new todo:</label>
-          <input type="text" onChange={this.handleChange} value={this.state.content}/>
+          <input type="text" id="add-todo" name="add-todo" onChange={this.handleChange} value={this.state.content}/>
         </form>
       </div>
     )
