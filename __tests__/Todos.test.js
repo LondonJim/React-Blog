@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "../src/setupTests"
-import { shallow, mount, render } from 'enzyme';
+import { shallow, mount, render } from 'enzyme'
 
-import Todos from '../src/Todos';
+import Todos from '../src/Todos'
 
 describe("Todos", () => {
   it("should render todo list",() => {
@@ -27,7 +27,7 @@ describe("Todos", () => {
                    deleteTodo: jest.fn()}
     const wrapper = mount(<Todos {...props} />)
     wrapper.find('span').simulate('click')
-    
+
     expect(props.deleteTodo).toHaveBeenCalled()
   });
 });
