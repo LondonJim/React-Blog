@@ -11,7 +11,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders welcome message', () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper.contains(<p>Welcome</p>)).toEqual(true)
-});
+// it('renders welcome message', () => {
+//   const wrapper = shallow(<App />);
+//   expect(wrapper.contains(<p>Welcome</p>)).toEqual(true)
+// });
