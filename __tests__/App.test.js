@@ -15,3 +15,9 @@ it('renders welcome message', () => {
   const wrapper = shallow(<App />);
   expect(wrapper.contains("Todo's")).toEqual(true)
 });
+
+describe('deleteTodo', () => {
+  const wrapper = shallow(<App />).instance()
+  console.log(wrapper.deleteTodo(1))
+  expect(wrapper.state.todos).toEqual([{id: 2, content: 'pick up package'}])
+})
